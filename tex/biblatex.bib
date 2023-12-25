@@ -1,0 +1,516 @@
+% BIBTEX Format
+% article audio bibnote book bookinbook booklet conference collection
+% commentary conference customa customb customc customd custome customf
+% dataset electronic image inbook incollection inproceedings inreference
+% juridiscation legal letter manual mastersthesis misc movie music mvbook
+% mvcollection mvproceesings mvreference online patent performance periodical
+% phdthesis proceedings reference report, techreport review set software
+% standard suppbook suppcollection suppperiodical thesis unpublished video www
+% xdata
+%
+% abstract address annote author booktitle Email chapter crossref doi edition
+% editor howpublished institution isbn issn journal key month note number
+% organization pages publisher school series title type url volume year
+%
+% FORMAT
+% @www{NameYear,
+% title = {Title},
+% author = {Author},
+% year = {Year},
+% note = {Note \url{}},
+% url = {http://}}
+% https://github.com/search?q=38db172d13962ea177c00c9a3b4b3169b317e94b&type=Commits
+% gh search commits --hash=8dd03144ffdc6c0d486d6b705f9c7fba871ee7c3
+% 
+% Umlaut etc. hast to be "backslashed" for pure ASCII to avoid any problems
+% when files are transferred between different peoples and systems.
+% file -i biblatex.bib
+% If bibliography file is "contaminated" with other codings you can see byte
+% positions with iconv, which list which bytes can't be directly transferred to
+% ascii and then stops.
+% iconv -t ascii biblatex.bib
+% Visual editor "vi" allows to jump given byte position with the goto command.
+% biber --tool --validate-datamodel <filename>.bib
+% /usr/share/texlive/texmf-dist/scripts/bibcop/bibcop.pl
+%
+% http://bibtexsearch.com
+% http://wikibooks.org/wiki/LaTeX
+% http://wikibooks.org/wiki/TeX
+% http://wikipedia.org/wiki/BibTeX
+% http://bibtex.com/g/bibtex-format
+% http://bibtex.org/Format
+% http://dblp.org
+% http://semanticscholar.org
+% http://citeseer.ist.psu.edu
+% http://youtube.com/@selfpublishingcom
+% http://youtube.com/@DaleLRoberts
+% http://youtube.com/@1MKWilliams
+% http://theurbanwriters.com/blogs/publishing/7-steps-to-self-publishing-on-google-play-books-in-2022
+% Narrated by: Google Play Autonarrated voice
+% http://play.google.com/about/giftcards/#where-to-buy
+% http://play.google.com/store/books
+% https://play.google.com/redeem
+% http://support.google.com/books/partner/answer/3289675?hl=en
+% http://support.google.com/books/partner/answer/3316879?hl=en
+% http://support.google.com/books/partner/answer/107073?hl=en
+% http://support.google.com/books/partner/answer/3431108?hl=en
+% http://wikipedia.org/wiki/International_Standard_Serial_Number
+% http://self-publishingschool.com/how-to-get-an-isbn
+% http://wikipedia.org/wiki/ISBN
+% http://isbn-international.org
+% http://issn.org
+% http://road.issn.org
+% http://issn.org/services/subscribe-to-the-register/pricing
+% http://aajanki.github.io/yle-dl/index-en.html
+% http://tex.stackexchange.com/questions/413385/beamer-how-to-make-url-big
+% http://tex.stackexchange.com/questions/67446/change-colour-of-boxes-surrounding-links-in-hyperref
+% http://stackoverflow.com/questions/2625714/linebreak-in-url-with-bibtex-and-hyperref-package
+% http://tex.stackexchange.com/questions/26174/allow-line-break-but-without-inserting-a-dash
+% http://tex.stackexchange.com/questions/3033/forcing-linebreaks-in-url
+
+@booklet{GT,
+ title={{General Theory}},
+ author={Potkonen, Ari},
+ publisher={Potkonen Ari},
+ edition={DRAFT},
+ year={2023},
+%doi={},
+ note={\url{http://github.com/apotkonen/gt}},
+ url={https://raw.githubusercontent.com/apotkonen/gt/main/general.pdf}
+}
+
+%http://wikipedia.org/wiki/List_of_unsolved_problems_in_physics
+%http://wikipedia.org/wiki/Planck_units
+%http://wikipedia.org/wiki/Big_Bang
+%http://wikipedia.org/wiki/Initial_singularity
+%http://wikipedia.org/wiki/Matter_creation
+%http://wikipedia.org/wiki/C-symmetry
+%http://wikipedia.org/wiki/P-symmetry
+%http://wikipedia.org/wiki/CP_violation
+%http://wikipedia.org/wiki/Baryon_asymmetry
+%http://wikipedia.org/wiki/Penguin_diagram
+%http://ourworldindata.org/energy-production-consumption % 160000TWh/y
+%http://wikipedia.org/wiki/Speed_of_light % 299792458 m/s
+%http://wikipedia.org/wiki/Mass%E2%80%93energy_equivalence % 24.965421632kg/TWh
+%160000TWh/y/24.965421632kg/TWh=6409kg/y
+
+%Thinking:
+%http://wikipedia.org/wiki/Duck_test
+%http://wikipedia.org/wiki/Philosophy
+%http://wikipedia.org/wiki/Philosophy_of_logic
+%http://wikipedia.org/wiki/Philosophical_logic
+%http://wikipedia.org/wiki/Philosophy_of_science
+%http://wikipedia.org/wiki/Philosophy_of_mathematics
+%http://wikipedia.org/wiki/Mathematical_proof
+%http://wikipedia.org/wiki/Mathematics
+%http://wikipedia.org/wiki/Number
+%http://wikipedia.org/wiki/Algebraic_structure
+%http://wikipedia.org/wiki/Presentation_of_a_group
+%http://wikipedia.org/wiki/Group_theory
+%http://wikipedia.org/wiki/List_of_mathematical_proofs
+%http://wikipedia.org/wiki/Lists_of_mathematics_topics
+
+%http://wikipedia.org/wiki/Metric_prefix
+%http://fi.wikipedia.org/wiki/Mittayksik%C3%B6n_etuliite
+%http://wikipedia.org/wiki/International_System_of_Units
+%http://wikipedia.org/wiki/Caesium_standard
+%http://wikipedia.org/wiki/Fine-structure_constant
+@www{FineStructureConst,
+ title = "Fine-structure constant",
+ url={http://wikipedia.org/wiki/Fine-structure_constant}
+}
+%http://wikipedia.org/wiki/Planck_constant
+%http://wikipedia.org/wiki/Reduced_Planck_constant
+%http://wikipedia.org/wiki/Vacuum_permeability
+%http://wikipedia.org/wiki/Vacuum_permittivity
+%http://wikipedia.org/wiki/Photon
+%http://wikipedia.org/wiki/Wave_packet
+%http://wikipedia.org/wiki/Wavelet
+%http://wikipedia.org/wiki/Chirplet
+%http://wikipedia.org/wiki/Spin_angular_momentum_of_light
+%http://wikipedia.org/wiki/Orthogonal_wavelet
+%http://wikipedia.org/wiki/Time_dilation
+%http://cse-lab.seas.harvard.edu/numerics/wavelet-particle-methods
+%http://wikipedia.org/wiki/Plane_wave
+%http://wikipedia.org/wiki/Circular_polarization
+
+%http://wikipedia.org/wiki/Christian_Doppler % 1803-1853
+%http://wikipedia.org/wiki/James_Clerk_Maxwell % 1831-1879
+%http://wikipedia.org/wiki/Hendrik_Lorentz % 1853-1928
+%http://wikipedia.org/wiki/Emil_Cohn % 1854-1944
+%http://wikipedia.org/wiki/J._J._Thomson % 1856-1940
+%http://wikipedia.org/wiki/Joseph_Larmor % 1857-1942
+%http://wikipedia.org/wiki/Max_Planck % 1858-1947
+%http://wikipedia.org/wiki/Albert_Einstein % 1879-1955
+
+%http://wikipedia.org/wiki/Time
+%http://wikipedia.org/wiki/Time_standard
+%http://wikipedia.org/wiki/International_System_of_Units
+%http://wikipedia.org/wiki/Second
+%http://wikipedia.org/wiki/Proper_time
+%http://wikipedia.org/wiki/Metre
+%http://wikipedia.org/wiki/Proper_length
+%http://wikipedia.org/wiki/Invariant_mass
+%http://wikipedia.org/wiki/Mass_in_special_relativity
+%http://wikipedia.org/wiki/Energy%E2%80%93momentum_relation
+%http://wikipedia.org/wiki/Gravity
+%http://wikipedia.org/wiki/Einstein_field_equations
+%http://wikipedia.org/wiki/Congruence_(general_relativity)
+
+%http://wikipedia.org/wiki/Acceleration
+%http://wikipedia.org/wiki/Proper_acceleration
+%http://wikipedia.org/wiki/Four-acceleration
+%http://wikipedia.org/wiki/Velocity
+%http://wikipedia.org/wiki/Proper_velocity
+%http://wikipedia.org/wiki/Four-velocity
+%http://wikipedia.org/wiki/Rapidity
+%http://wikipedia.org/wiki/Momentum
+%http://wikipedia.org/wiki/Four-momentum
+
+%http://wikipedia.org/wiki/Theory_of_relativity
+%http://wikipedia.org/wiki/General_relativity
+%http://wikipedia.org/wiki/Special_relativity
+%http://wikipedia.org/wiki/Mass%E2%80%93energy_equivalence
+
+%http://wikipedia.org/wiki/Problem_of_time
+%http://wikipedia.org/wiki/Wheeler%E2%80%93DeWitt_equation
+%http://wikipedia.org/wiki/Wave%E2%80%93particle_duality
+%http://wikipedia.org/wiki/Quantum_electrodynamics
+%http://wikipedia.org/wiki/Precision_tests_of_QED
+%http://wikipedia.org/wiki/Quantum_tunnelling
+%http://wikipedia.org/wiki/Tunnel_diode
+%http://wikipedia.org/wiki/Lamb_shift
+%http://wikipedia.org/wiki/Theodore_A._Welton
+%http://wikipedia.org/wiki/Fluctuation-dissipation_theorem
+%http://wikipedia.org/wiki/Quantum_tunnelling
+%http://wikipedia.org/wiki/Fundamental_interaction
+%http://wikipedia.org/wiki/Electromagnetism
+%http://wikipedia.org/wiki/Electroweak_interaction
+%http://wikipedia.org/wiki/Weak_interaction
+%http://wikipedia.org/wiki/Strong_interaction
+%http://hyperphysics.phy-astr.gsu.edu/hbase/Forces/funfor.html
+@www{TimeDilation,
+ title={Time dilation},
+ url={http://wikipedia.org/wiki/Time_dilation}
+}
+
+%Plane waves
+%http://wikipedia.org/wiki/Phonon
+%Euler's disc spolling
+%http://youtu.be/L3o0R2hStiY
+%http://youtu.be/rFtYzVJcWyA
+%http://youtu.be/75LzNyOkH5g
+%http://youtu.be/gXBoEaxFEk8
+%http://podaac.jpl.nasa.gov/OceanWaves
+%http://earthobservatory.nasa.gov/images/91472/cape-horn-a-mariners-nightmare
+%http://wikipedia.org/wiki/Wind_wave
+%http://wikipedia.org/wiki/Cross_sea
+%http://wikipedia.org/wiki/Rogue_wave
+%http://wikipedia.org/wiki/List_of_rogue_waves
+%http://wikipedia.org/wiki/Cape_Horn
+%http://youtu.be/6iFAOeKhVfc
+%http://wikipedia.org/wiki/Scattering
+
+%http://wikipedia.org/wiki/Timeline_of_fundamental_physics_discoveries
+%http://wikipedia.org/wiki/Theoretical_physics
+%http://wikipedia.org/wiki/List_of_unsolved_problems_in_physics
+%http://wikipedia.org/wiki/Spacetime
+%http://wikipedia.org/wiki/Theoretical_motivation_for_general_relativity
+%http://users.camk.edu.pl/bejger/raarcm/intro-gr.pdf
+%http://damtp.cam.ac.uk/user/tong/gr/grhtml/S1.html
+%http://wikipedia.org/wiki/Lorentz_transformation
+%http://wikipedia.org/wiki/Spacetime_diagram
+%http://wikipedia.org/wiki/Electromagnetic_tensor
+%http://wikipedia.org/wiki/Covariant_formulation_of_classical_electromagnetism
+%http://danfleisch.com/maxwell/csr.shtml
+%http://danfleisch.com/maxwell/CoordinateSystemReview.pdf
+
+%http://wikipedia.org/wiki/General_relativity
+%http://wikipedia.org/wiki/Schwinger_limit
+%http://wikipedia.org/wiki/Compton_wavelength
+%http://wikipedia.org/wiki/Electromagnetic_stress%E2%80%93energy_tensor
+%http://wikipedia.org/wiki/Introduction_to_the_mathematics_of_general_relativity
+%http://wikipedia.org/wiki/Maxwell%27s_equations_in_curved_spacetime
+%http://doi.org/10.1140/epjc/s10052-019-7583-9
+%http://doi.org/10.3390/universe9060292
+%http://inspirehep.net/literature/747498
+%http://osti.gov/servlets/purl/1617789
+%http://par.nsf.gov/servlets/purl/10167608
+%http://engineering.purdue.edu/wcchew/ece604f20/Lecture%20Notes/Lect2.pdf
+%http://academic.oup.com/ptp/article/58/3/829/1909563
+%http://pages.physics.wisc.edu/~craigm/toroid/toroid/toroid.html
+%http://researchgate.net/publication/235974549_Maxwell%27s_Equations_in_Arbitrary_Coordinate_System
+%http://escholarship.org/uc/item/1c49t97t
+%http://wiki.helsinki.fi/download/attachments/350261470/Lecture3a.pdf
+%http://link.springer.com/article/10.1134/S1995080215010114
+%http://ieeexplore.ieee.org/document/4333177
+%http://doi.org/10.1016/j.jcp.2009.09.033
+%http://journals.aps.org/prd/abstract/10.1103/PhysRevD.79.123525
+%http://doi.org/10.1051/0004-6361/202038907 
+%http://oda.oslomet.no/oda-xmlui/bitstream/handle/10642/2496/1166264post.pdf
+%http://physics.stackexchange.com/questions/559346/covariant-form-of-maxwell-equations-in-curved-spacetime
+%http://physics.stackexchange.com/questions/487976/is-there-differential-form-notation-for-maxwells-equation-in-curved-spacetime
+%http://api-depositonce.tu-berlin.de/server/api/core/bitstreams/a53d5f51-6a84-4ae7-8d96-a42a3350894e/content
+%http://ijpam.eu/contents/2012-76-2/6/6.pdf
+%http://arxiv.org/abs/2307.14555
+%http://wikipedia.org/wiki/Maxwell%27s_equations_in_curved_spacetime
+
+%http://wikipedia.org/wiki/Minkowski_space
+%http://williamsgj.people.cofc.edu/Minkowski%20Spacetime.pdf
+%http://wikipedia.org/wiki/Quantization_of_the_electromagnetic_field
+%http://wikipedia.org/wiki/Bispinor
+%http://wikipedia.org/wiki/Weyl_equation
+%http://wikipedia.org/wiki/Quantum_electrodynamics
+%http://wikipedia.org/wiki/Perturbation_theory_(quantum_mechanics)
+%http://wikipedia.org/wiki/Schr%C3%B6dinger_equation
+%http://wikipedia.org/wiki/Wave_function
+%http://wikipedia.org/wiki/Quantum_mechanics
+%http://wikipedia.org/wiki/Hilbert_space
+%http://wikipedia.org/wiki/Spherical_harmonics
+%http://mathworld.wolfram.com/SphericalHarmonic.html
+%http://mathworld.wolfram.com/Condon-ShortleyPhase.html
+%http://wikipedia.org/wiki/Pauli_exclusion_principle
+%http://wikipedia.org/wiki/Spinor
+%http://wikipedia.org/wiki/Spin_representation
+%http://wikipedia.org/wiki/Lie_algebra_representation
+%http://wikipedia.org/wiki/Reductive_group
+%http://wikipedia.org/wiki/Dalton_(unit)	%  931.4941024228 MeV 1 Da
+%http://wikipedia.org/wiki/Photon
+%http://wikipedia.org/wiki/Photon_energy
+%http://wikipedia.org/wiki/Bohr_magneton
+%http://wikipedia.org/wiki/Arthur_Compton
+%http://wikipedia.org/wiki/Compton_wavelength
+@www{ComptonWavelength,
+ title = "Compton wavelength",
+ url={http://wikipedia.org/wiki/Compton_wavelength}
+}
+%http://wikipedia.org/wiki/Julian_Schwinger
+%http://wikipedia.org/wiki/Schwinger_limit
+@www{SchwingerLimit,
+ title = "Schwinger limit",
+ url={http://wikipedia.org/wiki/Schwinger_limit}
+}
+%http://wikipedia.org/wiki/Thomson_scattering
+%http://wikipedia.org/wiki/Coupling_constant
+%http://wikipedia.org/wiki/Mass_in_special_relativity
+%http://wikipedia.org/wiki/Lorentz_transformation
+%http://wikipedia.org/wiki/Two-photon_physics
+%http://wikipedia.org/wiki/Breit%E2%80%93Wheeler_process
+%http://wikipedia.org/wiki/Schwinger_effect
+%http://wikipedia.org/wiki/Pair_production
+@www{PairProduction,
+ title = "Pair production",
+ url={http://wikipedia.org/wiki/Pair_production}
+}
+%http://wikipedia.org/wiki/Matter_creation
+%http://wikipedia.org/wiki/Positronium		%  001.022 MeV t0=0.1244 ns
+%http://wikipedia.org/wiki/Electron%E2%80%93positron_annihilation
+%http://wikipedia.org/wiki/Annihilation		%  001.022 MeV 
+@www{Annihilation,
+ title={Annihilation},
+ url={http://wikipedia.org/wiki/Annihilation}
+}
+%http://wikipedia.org/wiki/Electron		%  000.511 MeV 2.426x10-12m stable t0<=6.6x10^28 y
+%http://physics.nist.gov/cgi-bin/cuu/Value?mec2mev
+%http://physics.nist.gov/cgi-bin/cuu/Value?ecomwl %2.426x10-12 m 
+%http://wikipedia.org/wiki/Positron		%  000.511 MeV 2.426x10-12m stable t0<=6.6x10^28 y
+%http://wikipedia.org/wiki/Proton		%  938.272 MeV 1.321x10-15m stable 10^34 y
+%http://physics.nist.gov/cgi-bin/cuu/Value?mpc2mev
+%http://physics.nist.gov/cgi-bin/cuu/Value?pcomwl
+%http://wikipedia.org/wiki/Antiproton		%  938.272 MeV 1.321x10-15m stable 10^34 y
+%http://wikipedia.org/wiki/Antineutron
+%http://wikipedia.org/wiki/Neutron		%  939.565 MeV 1.319x10-15m unstable 879.4(6)s 
+%http://wikipedia.org/wiki/Free_neutron_decay
+%http://physics.nist.gov/cgi-bin/cuu/Value?mnc2mev % 939.565 MeV 
+%http://physics.nist.gov/cgi-bin/cuu/Value?ncomwl % 1.319x10-15 m 
+%http://wikipedia.org/wiki/Antineutron		%  939.565 MeV
+%http://wikipedia.org/wiki/Hydrogen_atom	% 
+%http://wikipedia.org/wiki/Proton_radius_puzzle
+%http://wikipedia.org/wiki/Protium
+%http://wikipedia.org/wiki/Deuterium		% 1876.124 MeV	2.0141Dax931.4941MeV/Da
+%http://wikipedia.org/wiki/Tritium
+%http://wikipedia.org/wiki/Helium
+%	:			:
+
+%http://wikipedia.org/wiki/Livermorium
+%http://wikipedia.org/wiki/Tennessine
+%http://wikipedia.org/wiki/Oganesson
+%http://wikipedia.org/wiki/Binding_energy
+%http://wikipedia.org/wiki/Island_of_stability
+%http://wikipedia.org/wiki/Island_of_inversion
+%http://wikipedia.org/wiki/Extended_periodic_table
+%http://wikipedia.org/wiki/Big_Bang
+%http://wikipedia.org/wiki/Big_Bang_nucleosynthesis
+%http://wikipedia.org/wiki/Stellar_nucleosynthesis
+%http://wikipedia.org/wiki/Matter_creation
+%http://wikipedia.org/wiki/Antimatter
+%http://wikipedia.org/wiki/Ionizing_radiation
+%http://wikipedia.org/wiki/Nuclear_reaction
+%http://wikipedia.org/wiki/Nucleosynthesis
+%http://wikipedia.org/wiki/Nuclear_fusion
+%http://wikipedia.org/wiki/Nuclear_fission
+%http://wikipedia.org/wiki/Half-life
+%http://wikipedia.org/wiki/List_of_radioactive_nuclides_by_half-life
+%http://wikipedia.org/wiki/Exponential_decay
+%http://wikipedia.org/wiki/Bohr_radius
+@www{Nuclides,
+ title={Live Chart of Nuclides},
+ publisher={International Atomic Energy Agency},
+ url={https://www-nds.iaea.org/relnsd/vcharthtml/VChartHTML.html}
+}
+%http://www2.lbl.gov/abc/wallchart
+%http://chandra.si.edu/photo/2023/uhz1
+%http://youtu.be/aJAc-ENcbDI
+
+%http://wikipedia.org/wiki/Standard_Model
+%http://wikipedia.org/wiki/Particle_physics
+%http://wikipedia.org/wiki/Invariant_mass
+%http://wikipedia.org/wiki/List_of_particles
+%http://wikipedia.org/wiki/Subatomic_particle
+%http://wikipedia.org/wiki/Hot_spot_effect_in_subatomic_physics
+%http://wikipedia.org/wiki/Optical_vortex %http://wikipedia.org/wiki/Abrikosov_vortex
+%http://wikipedia.org/wiki/Creation_and_annihilation_operators
+%http://wikipedia.org/wiki/Quantum_harmonic_oscillator
+%http://wikipedia.org/wiki/Table_of_spherical_harmonics
+%http://wikipedia.org/wiki/Elementary_charge %http://wikipedia.org/wiki/Flux#Electric_flux
+%http://wikipedia.org/wiki/Magnetic_flux_quantum %http://wikipedia.org/wiki/Fluxon %http://wikipedia.org/wiki/Quantum_vortex
+%http://wikipedia.org/wiki/Spherical_harmonics
+%http://wikipedia.org/wiki/Dirac_equation
+%http://wikipedia.org/wiki/Weak_nuclear_force
+%http://wikipedia.org/wiki/Weak_interaction
+%http://wikipedia.org/wiki/Flux#Electromagnetism
+%http://wikipedia.org/wiki/Strong_interaction
+%http://wikipedia.org/wiki/Planck_units %Plank length
+%http://wikipedia.org/wiki/Plane-wave_expansion
+%http://wikipedia.org/wiki/Weyl_expansion
+%http://wikipedia.org/wiki/Green%27s_function
+%http://wikipedia.org/wiki/Laplace_operator
+%http://wikipedia.org/wiki/Laplace%27s_equation
+%http://wikipedia.org/wiki/Helmholtz_equation
+%http://wikipedia.org/wiki/Green%27s_function_(many-body_theory)
+
+@book{Ecosystm,
+ title={{Ecosystem}},
+ author={Potkonen, Ari},
+ publisher={Potkonen Ari},
+ edition={DRAFT},
+ year={2023},
+%doi={},
+ note={\url{http://github.com/apotkonen/ecosystm}},
+ url={https://raw.githubusercontent.com/apotkonen/ecosystm/main/ecosystm.pdf}
+}
+
+@booklet{DayTax,
+ title={{Daily Tax}},
+ author={Potkonen, Ari},
+ publisher={Potkonen Ari},
+ edition={DRAFT},
+ year={2023},
+%doi={},
+ note={\url{http://github.com/apotkonen/dailytax}},
+ url={https://raw.githubusercontent.com/apotkonen/dailytax/main/dailytax.pdf}
+}
+
+%http://opensource.org/licenses
+%@legal{CC-BY-SA-40,
+@www{CC-BY-SA-40,
+ author={Creative Commons},
+ title={Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)},
+ publisher={Creative Commons Corporation},
+ year={2023},
+%note={http://creativecommons.org/licenses/by-sa/4.0},
+ url={http://creativecommons.org/licenses/by-sa/4.0/legalcode}
+}
+
+%@legal{Vapaakappaleoikeus,
+@www{Vapaakappaleoikeus,
+ title={Vapaakappaleoikeus},
+ note={\url{http://fi.wikipedia.org/wiki/Vapaakappaleoikeus}},
+ url={http://finlex.fi/fi/laki/ajantasa/2007/20071433} %http://finlex.fi/fi/laki/ajantasa/kumotut/1980/19800420
+}
+
+%http://wikipedia.org/wiki/Statistics
+%http://wikipedia.org/wiki/Probability
+%http://wikipedia.org/wiki/Density_estimation
+%http://wikipedia.org/wiki/Probability_density_function
+%http://wikipedia.org/wiki/Probability_mass_function
+%http://wikipedia.org/wiki/List_of_probability_distributions
+%http://wikipedia.org/wiki/Probability_distribution_fitting
+%http://pypi.org/project/fitter http://fitter.readthedocs.io https://medium.com/the-researchers-guide/finding-the-best-distribution-that-fits-your-data-using-pythons-fitter-library-319a5a0972e9
+%http://erdogant.github.io/distfit http://pypi.org/project/distfit
+%http://cran.r-project.org/web/packages/MASS/citation.html
+%http://cran.r-project.org/web/packages/MASS/MASS.pdf
+%http://rdocumentation.org/packages/MASS/versions/7.3-58.3/topics/fitdistr
+%http://cran.r-project.org/doc/contrib/Ricci-distributions-en.pdf
+%http://cran.r-project.org/web/packages/fitdistrplus
+%http://medium.com/the-researchers-guide/finding-the-best-distribution-that-fits-your-data-using-pythons-fitter-library-319a5a0972e9
+%http://wikipedia.org/wiki/Order_of_approximation
+%http://wikipedia.org/wiki/Propagation_of_uncertainty
+%http://wikipedia.org/wiki/Differentiation_rules
+%http://wikipedia.org/wiki/Error_analysis_(mathematics)
+%http://wikipedia.org/wiki/List_of_continuity-related_mathematical_topics
+%http://wikipedia.org/wiki/Continuous_function
+%http://wikipedia.org/wiki/Asymptotic_analysis
+%http://wikipedia.org/wiki/Big_O_notation
+
+@www{PerformanceDevelTop500, % http://top500.org/system/180048 http://top500.org/lists/top500
+ title={Performance Development},
+ note={Top 1 not bending as much as average},
+ url={http://top500.org/statistics/perfdevel}
+}
+
+% http://wikipedia.org/wiki/Dennard_scaling#Relation_with_Moore's_law_and_computing_performance
+@www{DennartScaling,
+ title={Dennart scaling},
+ url={http://wikipedia.org/wiki/Dennard_scaling}
+}
+% http://wikipedia.org/wiki/Performance_per_watt
+@www{KoomeysLaw,
+ title={Koomeys's Law},
+ url={http://wikipedia.org/wiki/Koomey%27s_law}
+}
+%   http://hpcg-benchmark.org
+% http://wikipedia.org/wiki/Moore%27s_law
+%http://wikipedia.org/wiki/Spherical_basis
+%http://wikipedia.org/wiki/Tensor_operator
+%http://wikipedia.org/wiki/Asymptote
+%http://wikipedia.org/wiki/Series_(mathematics)
+%http://wikipedia.org/wiki/List_of_mathematical_series
+%http://wikipedia.org/wiki/Polynomial
+%http://wikipedia.org/wiki/Power_series
+%http://wikipedia.org/wiki/Taylor_series
+%http://wikipedia.org/wiki/Mercator_series
+%http://wikipedia.org/wiki/Fourier_series
+%http://wikipedia.org/wiki/Fourier_transform
+%http://wikipedia.org/wiki/Fast_Fourier_transform
+%http://wikipedia.org/wiki/Fourier_inversion_theorem
+%http://wikipedia.org/wiki/Laurent_series
+%http://wikipedia.org/wiki/Dirichlet_series
+%http://wikipedia.org/wiki/Puiseux_series
+%http://wikipedia.org/wiki/Summation
+%http://wikipedia.org/wiki/Logarithm
+%http://wikipedia.org/wiki/Dirac_comb
+%http://wikipedia.org/wiki/Gamma_function
+%http://wikipedia.org/wiki/Laplace_transform
+%http://wikipedia.org/wiki/Inverse_Laplace_transform
+%http://wikipedia.org/wiki/Lists_of_integrals
+%http://wikipedia.org/wiki/Exponential_integral
+%http://wikipedia.org/wiki/Dirac_delta_function
+%http://wikipedia.org/wiki/Incomplete_gamma_function
+%http://wikipedia.org/wiki/List_of_integrals_of_exponential_functions
+%http://wikipedia.org/wiki/Mathematics_Subject_Classification
+%http://wikipedia.org/wiki/Lists_of_mathematics_topics
+%http://wikipedia.org/wiki/Residual_sum_of_squares
+%http://wikipedia.org/wiki/Partition_of_sums_of_squares
+%http://fitter.readthedocs.io
+%http://pypi.org/project/fitter
+%http://wasyresearch.com/tutorial-python-for-fitting-gaussian-distribution-on-data
+%http://stackoverflow.com/questions/37559470/what-do-all-the-distributions-available-in-scipy-stats-look-like
+%http://medium.com/the-researchers-guide/finding-the-best-distribution-that-fits-your-data-using-pythons-fitter-library-319a5a0972e9
+%http://github.com/erdogant/distfit/blob/master/distfit/examples.py
+%http://erdogant.github.io/distfit/pages/html/Abstract.html
+%http://erdogant.github.io/distfit/pages/html/Plots.html
+%http://erdogant.github.io/distfit
+%http://wikipedia.org/wiki/Mean_squared_error
+%http://wikipedia.org/wiki/Squared_deviations_from_the_mean
+

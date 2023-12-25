@@ -1,0 +1,234 @@
+%------------------------------------------------------------------------------
+%
+%	general.tex
+%
+%	AUTHOR: Ari Potkonen /JARVENPAA/ Mon Dec 11 2023
+%
+%	LICENSE:	All referred trademarks, logos and brand names are the
+%			property of their respective owners. This document is
+%			licensed under CC-BY-SA licensing scheme.
+%
+%			Any of the trademarks, service marks, collective marks,
+%			design rights, or similar rights that are mentioned,
+%			used, or cited are the property of their respective
+%			owners. Their use here does not imply that you may use
+%			them for any purpose other than for the same or a
+%			similar informational use as contemplated by the
+%			original author of document licensed under the CC-BY-SA
+%			licensing scheme. Author cannot grant any rights to use
+%			any otherwise protected materials. Your use of any such
+%			or similar incorporeal property is at your own risk.
+%
+%	LANGUAGE:	LaTeX2e to be used with latexmk
+%
+%
+%	REFERENCE ( http://latex-project.org/help/books , http://tug.org/books ):
+%
+%	- http://ctan.org/starter
+%	  http://ctan.org/pkg/amsmath
+%	  http://ctan.org/pkg/biblatex
+%
+%	- http://wikibooks.org/wiki/LaTeX
+%	- http://wikipedia.org/wiki/BibTeX
+%	- http://bibtex.com/format/fields
+%	- http://loc.gov/marc
+%	- http://issn.org
+%
+%	- Michel Coossens, Frank Mittelbach, Alexander Samarin:
+%	  The LaTeX Companion, Addison-Wesley Company, Inc.
+%	  United States of America 1994.
+%
+%	- Norman Walsh:
+%	  Making TeX Work, O'Reilly & Associates, Inc.
+%	  United States of America 1994.
+%
+%	- https://archive.org/details/B-001-002-139
+%	  https://archive.org/items/B-001-002-139/Donald_Knuth_-_The_Tex_Book.pdf
+%	  https://ctan.org/tex-archive/systems/knuth/dist/tex/texbook.tex
+%	  https://visualmatheditor.equatheque.net/doc/texbook.pdf
+%
+%	- https://www.texlive.info/CTAN/info/impatient/book.pdf
+%	  /usr/share/doc/texlive-doc/plain/impatient/book.pdf
+%
+%	- file:///usr/share/doc/texlive-doc/texlive/index.html
+%	  find /usr/share/doc/*tex* -iname "*.pdf" | less
+%
+%	- /usr/share/doc/latexmk/latexmk.pdf
+%	- /usr/share/doc/make-doc/make.pdf.gz
+%	- file:///usr/share/doc/make-doc/make.html/index.html
+%
+%	Edition defines major releases of document.	
+%
+%	EDITION:	0
+%
+%	Version defines minor changes which can be brought available online.
+%
+%	VERSION:	
+%
+%	CHANGED:
+%	DOCUMENT HISTORY:
+%
+%	FUTURE:
+%
+%	COMPILE:	make
+%			make clean
+%
+%------------------------------------------------------------------------------
+%         1         2         3         4         5         6         7
+%123456789012345678901234567890123456789012345678901234567890123456789012345678
+%-DOCUMENT PREAMBLE------------------------------------------------------------
+% /usr/share/doc/texlive-doc/latex/comprehensive/symbols-a4.pdf
+%\documentclass[a5paper,draft]{memoir}
+\documentclass[a5paper,final]{memoir}
+%\documentclass[10pt,a5paper]{book}
+%\documentclass[a5paper]{book}
+%\documentclass[a4paper]{book}
+%\documentclass[a4paper]{bookcover} % /usr/share/doc/texlive-doc/latex/bookcover/bookcover.pdf
+%\usepackage[]{geometry}
+%\usepackage[T1]{fontenc}
+%\usepackage[cp850]{inputenc} % DOS
+%\usepackage[ansinew]{inputenc} % Windows
+%\usepackage[utf8]{inputenc} % Linux, UTF-8
+%\usepackage[latin1]{inputenc} % Linux
+%\usepackage[english,finnish]{babel}
+%\usepackage[finnish]{babel}
+\usepackage[english]{babel}
+\usepackage{advdate}
+%\usepackage{siunitx}
+%\usepackage{eurosym}
+\usepackage[gen]{eurosym}
+%\usepackage{eurosans}
+%\usepackage[official]{eurosym}
+%\usepackage{icomma} % desimalcomma
+%\usepackage{amstex}
+\usepackage{amsmath}
+%\usepackage{amssymb}
+\usepackage{nicefrac}
+%\usepackage{xfrac}
+\usepackage{float}
+%\usepackage{titlepic}
+\usepackage{graphicx} % /usr/share/doc/texlive-doc/latex/graphics/graphicx.pdf
+%\usepackage{svg} % /usr/share/doc/texlive-doc/latex/svg/svg.pdf
+%\usepackage{svg-extract} 
+\usepackage{epsfig} % /usr/share/doc/texlive-doc/latex/graphics/epsfig.pdf
+\usepackage{rotating} % /usr/share/doc/texlive-doc/latex/graphics/rotating.pdf
+%\usepackage{hyperref} % /usr/share/doc/texlive-doc/latex/hyperref/hyperref.pdf
+\usepackage{supertabular}
+%\usepackage{verbatim}
+%\usepackage{hyphenat}
+%\hyphenation{e-com-mer-ce com-mer-ce mind-ed ex-ist-ing providers en-tre-pre-neurs}
+\usepackage{csquotes} % /usr/share/doc/texlive-doc/latex/csquotes/csquotes.pdf
+\usepackage{biblatex}
+%\usepackage{url} % /usr/share/doc/texlive-doc/latex/url/url.pdf
+\usepackage{xurl} % /usr/share/doc/texlive-doc/latex/xurl/xurl.pdf penalties for biblatex
+%\usepackage[hidelinks]{hyperref} % texlive-doc/latex/hyperref/hyperref-doc.pdf
+\usepackage[bookmarks=true,hidelinks]{hyperref} % hyperref/hyperref-doc.pdf
+\usepackage{bookmark} % /usr/share/doc/texlive-doc/latex/bookmark/bookmark.pdf
+%\addbibresource{biblatex.bib}
+\bibliography{biblatex} 	% Use biblatex.bib !  /usr/share/doc/texlive-doc/latex/biblatex/biblatex.pdf
+%\addbibresource{biblatex.bib}
+%\usepackage[nottoc,numbib]{tocbibind}
+%\usepackage{pgffor}  % for \foreach
+\usepackage{pdfpages} %/usr/share/doc/texlive-doc/latex/pdfpages/pdfpages.pdf
+\usepackage{makeidx}
+\makeindex
+%-DOCUMENT PREAMBLE END--------------------------------------------------------
+\begin{document}
+%\pagestyle{plain}
+%-DOCUMENT FRAME --------------------------------------------------------------
+% Front cover, colored cover page?
+%-TITLE PAGE-------------------------------------------------------------------
+%\clearpage
+%\begin{titlepage}
+%\pagestyle{empty}
+%\pagestyle{combine}
+\pagenumbering{gobble}
+%\centering
+%\begin{center}
+\title{\Huge\textbf{Electromagnetism\linebreak energy and space}
+\linebreak Keep It Simple Stupid\linebreak (KISS) -- Ideas \linebreak
+\linebreak REPLAY \linebreak
+\linebreak \linebreak
+%\includegraphics[height=64pt,width=64pt]{fig/logo.eps} \linebreak
+\linebreak
+%\normalsize
+\small
+For discussions from the nature's nature !\linebreak
+(http://github.com/apotkonen/gt)
+}
+\author{\Large Potkonen Ari}
+%\SetDate[24/12/2023]
+%\begin{figure}[H]
+%\includegraphics[height=32pt,width=32pt]{figures/resoaigb.eps}
+%\end{figure}
+%\end{center}
+\maketitle
+%\end{titlepage}
+\pagebreak
+%-PREFACE----------------------------------------------------------------------
+%\clearpage
+\pagestyle{plain}
+\parindent 0pt
+%\frontmatter
+\setcounter{page}{1}
+\pagenumbering{roman}
+\include{preface}	% Input preface.tex file here!
+\include{rights}	% Input rights.tex file here!
+\pagebreak %\clearpage
+\tableofcontents
+\listoffigures
+%\listoftables
+\vspace*{\fill}
+%\pagebreak %\clearpage
+%\include{marks}	% Input marks.tex file here!
+\pagebreak %\clearpage
+\pagestyle{headings}
+%\mainmatter
+\setcounter{page}{1}
+\pagenumbering{arabic}
+\parindent 0pt
+\include{story}		% Input story.tex file here!
+\include{formulat}	% Input formulat.tex file here!
+\include{proof}		% Input proof.tex file here!
+%\pagebreak
+%\backmatter
+%-INDEX------------------------------------------------------------------------
+%\clearpage
+%\printindex
+%\pagebreak
+%-BIBLIOGRAPHY-----------------------------------------------------------------
+%\bibliographystyle{plain}
+%\bibliography{biblio}
+%\include{biblio}	% Input biblio.tex file here!
+\printbibliography
+%\addcontentsline{toc}{chapter}{Bibliography}
+%\pagebreak
+%-APPENDIX---------------------------------------------------------------------
+\pagestyle{plain}
+%\part{Appendixes}
+%\chapter{Appendixes}
+%\appendix
+%\begin{papers}
+%\input
+%\import
+%\include{appendix}	% Input appendix.tex file here!
+%\foreach \x in {1,2,...,10}{ \includepdf[pages=-]{\x} }
+%\section[Dailytax]{}
+%\section[Dailytax]{Author and editor of this document} \label{intro}
+%Actual introduction text and possible refrence \pageref{tag}
+%\coltoctitle{An article} % An article at main ToC
+%\coltocauthor{Author} % author on main ToC
+
+%\label{dailytax} \index{dailytax}
+%\addcontentsline{toc}{section}{Dailytax}
+%\includepdf[pages=-]{../../dailytax/dailytax.pdf}
+%\includepdf[pages=-]{../../dailytax/tex/dailytax.pdf}
+
+%\end{papers}
+%\pagebreak
+%- BACK COVER ABSTRACT -------------------------------------------------------
+%\includegraphics
+% Back cover, colored page?
+\include{abstract}	% Input abstract.tex, book back cover,file here!
+\end{document}
+\endinput
