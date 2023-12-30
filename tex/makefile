@@ -32,9 +32,12 @@
 # lof	List Of Figures
 # log	latex LOG file
 # pdf	Postscript Document File
+# pfb	Postscript Font Binary
 # run.xml
 # tex	TeX, LaTeX TEXt file
+# tfm	Tex Font Metric Data
 # toc	babel Table Of Content
+# vf	tex Virtual Font data
 
 # Find out what original files you have on directory
 texfiles = $(wildcard *.tex)
@@ -42,10 +45,12 @@ texfiles = $(wildcard *.tex)
 # Definitions:
 DOC = general
 SUBM = fig
+#LATEX = latex
+#LATEX = xelatex
 LATEX = lualatex # latex
-#BIBTEX = bibtex # nbibtex, bibtexu aux->bbl
+BIBTEX = bibtex # nbibtex, bibtexu aux->bbl
 BIBER = biber # bcf->bbl
-CLEAN =	lintex && rm -f clean *.xml
+CLEAN =	lintex -o -k && rm -f clean all *.xml
 MAKEINDEX = makeindex
 #LATEXMK = latexmk
 
@@ -74,6 +79,12 @@ $(DOC).bbl : $(DOC).bcf ; $(BIBER) $(DOC).bcf
 $(DOC).ind : $(DOC).idx ; $(MAKEINDEX) $(DOC).idx
 
 $(DOC).pdf : $(DOC).bbl $(DOC).ind $(DOC).tex ; $(LATEX) $(DOC).tex
+
+#$(DOC).dvi : $(DOC).bbl $(DOC).ind $(DOC).tex ; $(LATEX) $(DOC).tex
+
+#$(DOC).ps : $(DOC).dvi ; $(DVIPS) $(DOC).ps $(DOC).dvi
+
+#$(DOC).pdf : $(DOC).ps ; $(PS2PDF)$(DOC).pdf $(DOC).ps
 
 # Clean: Remove temporary files.
 .PHONY: clean 

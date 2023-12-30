@@ -9,12 +9,14 @@
 # pdf	Postscript Document File
 #
 # USAGE: make
+# 	 make clean
 #
 
 # Definitions:
 SUBM = tex
 DOC = general
-CLEAN = rm -f $(DOC).pdf clean all
+CLEAN = rm -rf $(DOC).pdf clean all ~/.texlive*
+PDFFONTS = pdffonts
 
 # Targets:
 .PHONY: all
@@ -22,6 +24,8 @@ all: $(DOC).pdf
 
 $(DOC).pdf :
 	make -C $(SUBM) all && make -C $(SUBM) clean
+	echo "With the document bundled fonts:"
+	$(PDFFONTS) $(DOC).pdf
 
 # Clean : Remove temporary files.
 .PHONY : clean 

@@ -57,6 +57,9 @@
 %	- /usr/share/doc/make-doc/make.pdf.gz
 %	- file:///usr/share/doc/make-doc/make.html/index.html
 %
+%	- https://ctan.org/topic/font-maths
+%	- https://ctan.org/tex-archive/fonts
+%	- https://tug.org/FontCatalogue/mathfonts.html
 %	Edition defines major releases of document.	
 %
 %	EDITION:	0
@@ -94,6 +97,7 @@
 %\usepackage[finnish]{babel}
 \usepackage[english]{babel}
 \usepackage{advdate}
+\usepackage{fontspec} % /usr/share/doc/texlive-doc/latex/fontspec/fontspec.pdf
 %\usepackage{siunitx}
 %\usepackage{eurosym}
 \usepackage[gen]{eurosym}
@@ -101,8 +105,13 @@
 %\usepackage[official]{eurosym}
 %\usepackage{icomma} % desimalcomma
 %\usepackage{amstex}
-\usepackage{amsmath}
+%\usepackage{amsmath}
 %\usepackage{amssymb}
+%\usepackage{libertinust1math}
+\usepackage{unicode-math} % doc/texlive-doc/latex/unicode-math/unicode-math.pdf
+%\usepackage{newtxmath} % http://ctan.org/pkg/newtx
+%\usepackage{newpxmath} % http://ctan.org/pkg/newpx
+%\usepackage{notomath} % doc/texlive-doc/fonts/notomath/notomath-doc.pdf
 \usepackage{nicefrac}
 %\usepackage{xfrac}
 \usepackage{float}
@@ -131,6 +140,16 @@
 %\usepackage{pgffor}  % for \foreach
 \usepackage{pdfpages} %/usr/share/doc/texlive-doc/latex/pdfpages/pdfpages.pdf
 \usepackage{makeidx}
+%\setmainfont{Linux Biolinum O}
+\setmainfont{Linux Libertine O}
+%\setmainfont{FreeSerif}
+%\setmainfont{FreeSans}
+%\setmonofont{FreeMono}
+%\setmainfont{NotoSans}
+%\setmonofont{NotoSansMono}
+%\setmainfont{NotoSerif}
+%\setmonofont{NotoMono}
+%\setmainfont{Unifont}
 \makeindex
 %-DOCUMENT PREAMBLE END--------------------------------------------------------
 \begin{document}
@@ -157,9 +176,9 @@ For discussions from the nature's nature !\linebreak
 (http://github.com/apotkonen/gt)
 }
 \author{\Large Potkonen Ari}
-%\SetDate[24/12/2023]
+\SetDate[25/12/2023]
 %\begin{figure}[H]
-%\includegraphics[height=32pt,width=32pt]{figures/resoaigb.eps}
+%\includegraphics[height=32pt,width=32pt]{figures/file.eps}
 %\end{figure}
 %\end{center}
 \maketitle
@@ -219,10 +238,9 @@ For discussions from the nature's nature !\linebreak
 %\coltoctitle{An article} % An article at main ToC
 %\coltocauthor{Author} % author on main ToC
 
-%\label{dailytax} \index{dailytax}
-%\addcontentsline{toc}{section}{Dailytax}
-%\includepdf[pages=-]{../../dailytax/dailytax.pdf}
-%\includepdf[pages=-]{../../dailytax/tex/dailytax.pdf}
+%\label{} \index{}
+%\addcontentsline{toc}{section}{}
+%\includepdf[pages=-]{../..//.pdf}
 
 %\end{papers}
 %\pagebreak
