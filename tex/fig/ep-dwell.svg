@@ -1,0 +1,5 @@
+<svg height="16" width="16">
+<circle cx="10" cy="9" r="1" stroke="red" fill="red"/>
+<circle cx="6" cy="9" r="1" stroke="blue" fill="blue"/>
+<path d="M0,4 L3,4 L3,12 L13,12 L13,4 L16,4" stroke="black" fill="none"/>
+</svg> 

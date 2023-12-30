@@ -1,0 +1,10 @@
+<svg height="16" width="16">
+<circle cx="10" cy="11" r="1" stroke="red" fill="red"/>
+<circle cx="6" cy="11" r="1" stroke="blue" fill="blue"/>
+<line x1="3" y1="5" x2="3" y2="14" stroke="grey" stroke-linecap="round"/>
+<line x1="13" y1="5" x2="13" y2="14" stroke="grey" stroke-linecap="round"/>
+<path d="M2,5 C2,4 14,4 14,5" fill="none" stroke="grey" stroke-linecap="round"/>
+<path d="M2,5 C2,6 14,6 14,5" fill="none" stroke="grey" stroke-linecap="round"/>
+<path d="M3,14 C3,13 13,13 13,14" fill="none" stroke="grey" stroke-linecap="round"/>
+<path d="M3,14 C3,15 13,15 13,14" fill="none" stroke="grey" stroke-linecap="round"/>
+</svg> 

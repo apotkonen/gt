@@ -39,5 +39,5 @@ all: $(epsfiles)
 # Clean: Remove temporary typesetting program input files.
 .PHONY: clean
 clean:
-	rm -f clean *.eps *.pdf
+	rm -f clean all *.eps *.pdf
 

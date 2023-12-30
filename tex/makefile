@@ -29,35 +29,53 @@
 # lbx	Language definition file BibteX
 # idx	InDeX entrys
 # ilg	makeIndex LoG
+# lat	spreadscheet calculator default extension for LATex export file
 # lof	List Of Figures
 # log	latex LOG file
+# out	Bookmark file
 # pdf	Postscript Document File
-# run.xml
+# pfb	Postscript Font Binary
+# run.xml logreq request file /usr/share/doc/texlive-doc/latex/logreq/README
+# sc	Spreadsheet Calculator
 # tex	TeX, LaTeX TEXt file
+# tfm	Tex Font Metric Data
 # toc	babel Table Of Content
+# vf	tex Virtual Font data
 
-# Find out what original files you have on directory
-texfiles = $(wildcard *.tex)
+# Find out what original files you have on directory and
+# create needed temporary files for typesetting program.
+scfiles  = $(wildcard *.sc)
+sc2lat   = $(patsubst %.sc,%.lat,$(scfiles))
+lat2tex  = $(patsubst %.lat,%.tex,$(sc2lat))
+texfiles = $(wildcard *.tex) $(lat2tex)
 
 # Definitions:
 DOC = general
 SUBM = fig
+#LATEX = latex
+#LATEX = xelatex
 LATEX = lualatex # latex
-#BIBTEX = bibtex # nbibtex, bibtexu aux->bbl
+SC2LAT = echo "set tblstyle=latex\ntbl \"\"" | sc -q
+BIBTEX = bibtex # nbibtex, bibtexu aux->bbl
 BIBER = biber # bcf->bbl
-CLEAN =	lintex && rm -f clean *.xml
+CLEAN =	lintex -o -k -v && rm -f clean all $(sc2lat) $(lat2tex) *.xml
 MAKEINDEX = makeindex
 #LATEXMK = latexmk
 
 # Clear suffixlist
 .SUFFIXES:
 # Add suffixrule supported suffix to suffixes list.
-.SUFFIXES: .pdf
+#.SUFFIXES: .sc .lat .pdf
+.SUFFIXES: .sc .lat
 
 # Define implicit rule for added suffix:
 #%.pdf: %.tex $(texfiles)
 #	make -C $(SUBM)
 #	$(LATEXMK) $< $@
+%.lat: %.sc
+	$(SC2LAT) $<
+%.tex: %.lat
+	cp $< $@
 
 # Targets:
 .PHONY: all
@@ -74,6 +92,12 @@ $(DOC).bbl : $(DOC).bcf ; $(BIBER) $(DOC).bcf
 $(DOC).ind : $(DOC).idx ; $(MAKEINDEX) $(DOC).idx
 
 $(DOC).pdf : $(DOC).bbl $(DOC).ind $(DOC).tex ; $(LATEX) $(DOC).tex
+
+#$(DOC).dvi : $(DOC).bbl $(DOC).ind $(DOC).tex ; $(LATEX) $(DOC).tex
+
+#$(DOC).ps : $(DOC).dvi ; $(DVIPS) $(DOC).ps $(DOC).dvi
+
+#$(DOC).pdf : $(DOC).ps ; $(PS2PDF)$(DOC).pdf $(DOC).ps
 
 # Clean: Remove temporary files.
 .PHONY: clean 
